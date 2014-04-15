@@ -62,7 +62,7 @@ namespace {0} {{
                                      this.GetType().Name,
                                      typeof(ResXCodeBuilder).Assembly.GetName().Version.ToString());
             _codeBuilder.AppendLine();
-            _codeBuilder.AppendFormat("    internal static class {0} {{", className);
+            _codeBuilder.AppendFormat("    public static class {0} {{", className);
             _codeBuilder.AppendLine();
 
             foreach (ResXItem resourceItem in resourceItems) {
